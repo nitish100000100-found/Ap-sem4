@@ -1,44 +1,74 @@
-# Advanced Programming Assignments Repository
+# Assignment 15: Multithreaded Counter using POSIX Threads
 
-**Name:** Nitish Kumar  
-**Subject:** Advanced Programming  
-**Teacher:** Nabojyoti Medhi  
-**Semester:** 4th Semester  
-**College:** Tezpur University  
+## Question
 
-## About
+Write a multithreaded C program using POSIX threads (pthread) where multiple threads increment a shared global counter variable many times.
 
-This repository contains all assignments submitted for the **Advanced Programming** course. Each assignment is maintained in a separate Git branch as per the submission guidelines.
+Requirements:
 
-## Branches
+* Demonstrate race condition without synchronization.
+* Use pthread_create() for thread creation.
+* Use pthread_join() for thread completion.
+* Use pthread_mutex_lock() and pthread_mutex_unlock() for synchronization.
+* Produce correct output using a mutex.
 
-- `assignment-1`
-- `assignment-2`
-- `assignment-3`
-- `assignment-4`
-- `assignment-5`
-- `assignment-6`
-- `assignment-7`
-- `assignment-8`
-- `assignment-9`
-- `assignment-10`
-- `assignment-11`
-- `assignment-12`
-- `assignment-13`
-- `assignment-14`
-- `assignment-15`
-- `assignment-16`
-- `assignment-17`
-- `assignment-18`
-- `assignment-19`
+## Program
 
-## Submission Guidelines Followed
+**File:** `pthread_counter.c`
 
-- Each assignment is stored in a separate Git branch.
-- Each branch contains the corresponding source code.
-- Each branch includes a README file containing the assignment question.
+The program creates multiple threads that increment a shared global counter.
 
----
+Two versions are demonstrated:
 
-**Nitish Kumar**  
+1. Without synchronization (Race Condition)
+2. With mutex synchronization
+
+## Race Condition
+
+A race condition occurs because multiple threads access and modify the same shared variable simultaneously.
+
+The statement:
+
+```c
+counter++;
+```
+
+is not an atomic operation. Multiple threads may read, modify, and write the value at the same time, causing updates to be lost.
+
+As a result, the final counter value is often less than the expected value.
+
+## How Mutex Solves the Problem
+
+A mutex ensures that only one thread can enter the critical section at a time.
+
+The critical section:
+
+```c
+pthread_mutex_lock(&mutex);
+
+counter++;
+
+pthread_mutex_unlock(&mutex);
+```
+
+prevents simultaneous modification of the shared counter, ensuring correct results.
+
+## Compilation
+
+```bash
+gcc pthread_counter.c -o output -lpthread
+```
+
+## Execution
+
+```bash
+./output
+```
+
+## Submitted By
+
+**Nitish Kumar**
+**Subject:** Advanced Programming
+**Teacher:** Nabajyoti Medhi
+**Semester:** 4th Semester
 **Tezpur University**
