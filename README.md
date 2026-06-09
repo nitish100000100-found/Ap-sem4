@@ -1,44 +1,101 @@
-# Advanced Programming Assignments Repository
+# Assignment 6: Student Performance Analyzer
 
-**Name:** Nitish Kumar  
-**Subject:** Advanced Programming  
-**Teacher:** Nabojyoti Medhi  
-**Semester:** 4th Semester  
-**College:** Tezpur University  
+## Question
 
-## About
+Develop a student performance analyzer in Java. Each student has:
 
-This repository contains all assignments submitted for the **Advanced Programming** course. Each assignment is maintained in a separate Git branch as per the submission guidelines.
+* id (int)
+* name (String)
+* courses (List<String>)
+* scores (Map<String, Integer>) where key = course and value = marks
 
-## Branches
+### Requirements
 
-- `assignment-1`
-- `assignment-2`
-- `assignment-3`
-- `assignment-4`
-- `assignment-5`
-- `assignment-6`
-- `assignment-7`
-- `assignment-8`
-- `assignment-9`
-- `assignment-10`
-- `assignment-11`
-- `assignment-12`
-- `assignment-13`
-- `assignment-14`
-- `assignment-15`
-- `assignment-16`
-- `assignment-17`
-- `assignment-18`
-- `assignment-19`
+1. Store students using appropriate collections.
+2. Implement:
 
-## Submission Guidelines Followed
+   * `List<Student> getTopNStudents(List<Student> students, int n)`
+   * `Map<String, Double> getAverageScorePerCourse(List<Student> students)`
+   * `Set<String> getAllUniqueCourses(List<Student> students)`
 
-- Each assignment is stored in a separate Git branch.
-- Each branch contains the corresponding source code.
-- Each branch includes a README file containing the assignment question.
+### Must Use
 
----
+* ArrayList
+* HashMap
+* HashSet
+* Java Streams
+* Comparator
+* Generics
+* getOrDefault()
 
-**Nitish Kumar**  
+### Complexity Analysis
+
+1. Time complexity of computing course averages.
+2. Complexity of sorting top N students.
+
+## Program
+
+File: `StudentPerformanceAnalyzer.java`
+
+The program manages student records using Java Collections Framework and Streams API. It performs student ranking, course-wise average calculation, unique course extraction, filtering of passed students, and empirical complexity analysis.
+
+## Features
+
+* Student data management using collections.
+* Course-wise average score calculation.
+* Top N student retrieval.
+* Sorting using Comparator.
+* Stream-based aggregation and filtering.
+* Unique course extraction using HashSet.
+* Missing score handling using `getOrDefault()`.
+* Empirical complexity analysis.
+
+## Compilation
+
+```bash
+javac StudentPerformanceAnalyzer.java
+```
+
+## Execution
+
+```bash
+java StudentPerformanceAnalyzer
+```
+
+## Complexity Analysis
+
+### Computing Course Averages
+
+* Time Complexity: **O(n · m + k · n)**
+* Worst Case: **O(n² · m)**
+
+Where:
+
+* n = number of students
+* m = average courses per student
+* k = unique courses
+
+### Sorting Top N Students
+
+* Time Complexity: **O(n log n)**
+* Additional Average Calculation Cost: **O(n · m)**
+
+Overall:
+
+```text
+O(n · m + n log n)
+```
+
+If m is constant:
+
+```text
+O(n log n)
+```
+
+## Submitted By
+
+**Nitish Kumar**
+**Subject:** Advanced Programming
+**Teacher:** Nabajyoti Medhi
+**Semester:** 4th Semester
 **Tezpur University**
