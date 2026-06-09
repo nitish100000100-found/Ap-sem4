@@ -4,7 +4,7 @@
 **Subject:** Advanced Programming  
 **Teacher:** Nabojyoti Medhi  
 **Semester:** 4th Semester  
-**College:** Tezpur University
+**College:** Tezpur University  
 
 ## About
 
