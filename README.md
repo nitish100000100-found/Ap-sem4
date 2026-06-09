@@ -1,44 +1,53 @@
-# Advanced Programming Assignments Repository
+# Assignment 2: Space Complexity Analysis
 
-**Name:** Nitish Kumar  
-**Subject:** Advanced Programming  
-**Teacher:** Nabojyoti Medhi  
-**Semester:** 4th Semester  
-**College:** Tezpur University  
+## Question
 
-## About
+Write a C program for three different operations as stated in Question 1 to analyze the space complexity.
 
-This repository contains all assignments submitted for the **Advanced Programming** course. Each assignment is maintained in a separate Git branch as per the submission guidelines.
+## Program
 
-## Branches
+File: `space_complexity.c`
 
-- `assignment-1`
-- `assignment-2`
-- `assignment-3`
-- `assignment-4`
-- `assignment-5`
-- `assignment-6`
-- `assignment-7`
-- `assignment-8`
-- `assignment-9`
-- `assignment-10`
-- `assignment-11`
-- `assignment-12`
-- `assignment-13`
-- `assignment-14`
-- `assignment-15`
-- `assignment-16`
-- `assignment-17`
-- `assignment-18`
-- `assignment-19`
+The program demonstrates and compares the space complexity of three different operations:
 
-## Submission Guidelines Followed
+### Operation 1: Print Array Elements
 
-- Each assignment is stored in a separate Git branch.
-- Each branch contains the corresponding source code.
-- Each branch includes a README file containing the assignment question.
+* Prints all elements of an array.
+* Extra Space Complexity: **O(1)**
 
----
+### Operation 2: Duplicate Array
 
-**Nitish Kumar**  
+* Creates a copy of the original array using an additional array.
+* Extra Space Complexity: **O(n)**
+
+### Operation 3: Recursive Sum
+
+* Calculates the sum of array elements using recursion.
+* Uses recursive function calls and stack memory.
+* Space Complexity: **O(n)**
+
+## Compilation
+
+```bash
+gcc space_complexity.c -o output
+```
+
+## Execution
+
+```bash
+./output
+```
+
+## Expected Output
+
+* Original Array
+* Duplicated Array
+* Recursive Sum
+
+## Submitted By
+
+**Nitish Kumar**
+**Subject:** Advanced Programming
+**Teacher:** Nabajyoti Medhi
+**Semester:** 4th Semester
 **Tezpur University**
