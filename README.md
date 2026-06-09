@@ -1,44 +1,42 @@
-# Advanced Programming Assignments Repository
+# Assignment 4: Product Stock Management using List and Dictionary
 
-**Name:** Nitish Kumar  
-**Subject:** Advanced Programming  
-**Teacher:** Nabojyoti Medhi  
-**Semester:** 4th Semester  
-**College:** Tezpur University  
+## Question
 
-## About
+Create a Python program using a list and dictionary to store products with name and stock quantity. Display all products whose stock is less than 10.
 
-This repository contains all assignments submitted for the **Advanced Programming** course. Each assignment is maintained in a separate Git branch as per the submission guidelines.
+## Program
 
-## Branches
+File: `product_stock.py`
 
-- `assignment-1`
-- `assignment-2`
-- `assignment-3`
-- `assignment-4`
-- `assignment-5`
-- `assignment-6`
-- `assignment-7`
-- `assignment-8`
-- `assignment-9`
-- `assignment-10`
-- `assignment-11`
-- `assignment-12`
-- `assignment-13`
-- `assignment-14`
-- `assignment-15`
-- `assignment-16`
-- `assignment-17`
-- `assignment-18`
-- `assignment-19`
+The program stores product information using a list of dictionaries. Each dictionary contains the product name and available stock quantity. The program displays all products whose stock quantity is less than 10.
 
-## Submission Guidelines Followed
+## Features
 
-- Each assignment is stored in a separate Git branch.
-- Each branch contains the corresponding source code.
-- Each branch includes a README file containing the assignment question.
+* Uses Python List and Dictionary.
+* Stores product name and stock quantity.
+* Filters products based on stock availability.
+* Displays products with stock less than 10.
 
----
+## Execution
 
-**Nitish Kumar**  
+```bash
+python3 product_stock.py
+```
+
+## Sample Output
+
+```text
+Products with stock less than 10:
+
+Name: Mouse | Stock: 5
+Name: Keyboard | Stock: 8
+Name: USB Cable | Stock: 3
+```
+
+## Submitted By
+
+**Nitish Kumar**
+**Subject:** Advanced Programming
+**Teacher:** Nabajyoti Medhi
+**Semester:** 4th Semester
 **Tezpur University**
