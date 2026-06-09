@@ -1,44 +1,66 @@
-# Advanced Programming Assignments Repository
+# Assignment 18: Score File Processing and Exception Handling
 
-**Name:** Nitish Kumar  
-**Subject:** Advanced Programming  
-**Teacher:** Nabojyoti Medhi  
-**Semester:** 4th Semester  
-**College:** Tezpur University  
+## Question
 
-## About
+Create a utility class that reads an integer score from a text file, multiplies it by 10, and returns the result.
 
-This repository contains all assignments submitted for the **Advanced Programming** course. Each assignment is maintained in a separate Git branch as per the submission guidelines.
+### Requirements
 
-## Branches
+* Read score from a text file.
+* Multiply the score by 10.
+* Handle missing files.
+* Handle invalid numeric data.
+* Ensure cleanup code executes in all situations.
+* Write automated tests using pytest.
 
-- `assignment-1`
-- `assignment-2`
-- `assignment-3`
-- `assignment-4`
-- `assignment-5`
-- `assignment-6`
-- `assignment-7`
-- `assignment-8`
-- `assignment-9`
-- `assignment-10`
-- `assignment-11`
-- `assignment-12`
-- `assignment-13`
-- `assignment-14`
-- `assignment-15`
-- `assignment-16`
-- `assignment-17`
-- `assignment-18`
-- `assignment-19`
+## Program
 
-## Submission Guidelines Followed
+**File:** `score_processor.py`
 
-- Each assignment is stored in a separate Git branch.
-- Each branch contains the corresponding source code.
-- Each branch includes a README file containing the assignment question.
+The program reads an integer value from a text file, multiplies it by 10, and returns the result.
 
----
+Exception handling is implemented using:
 
-**Nitish Kumar**  
+* FileNotFoundError
+* ValueError
+* try-except-else-finally
+
+The program also contains pytest test cases for successful and invalid scenarios.
+
+## Sample Input File
+
+**File:** `input.txt`
+
+```text
+7
+```
+
+## Expected Output
+
+```text
+Data processed successfully
+File cleanup completed
+70
+```
+
+## Execution
+
+Run Program:
+
+```bash
+python3 score_processor.py
+```
+
+Run Tests:
+
+```bash
+pytest score_processor.py
+```
+
+## Submitted By
+
+**Nitish Kumar**
+**Subject:** Advanced Programming
+**Teacher:** Nabajyoti Medhi
+**Semester:** 4th Semester
 **Tezpur University**
