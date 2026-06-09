@@ -1,44 +1,74 @@
-# Advanced Programming Assignments Repository
+# Assignment 13: Dynamic String Buffer in C
 
-**Name:** Nitish Kumar  
-**Subject:** Advanced Programming  
-**Teacher:** Nabojyoti Medhi  
-**Semester:** 4th Semester  
-**College:** Tezpur University  
+## Question
 
-## About
+In C, managing strings is a common source of buffer overflows and memory leaks. Implement a Dynamic String Buffer that automatically grows as needed.
 
-This repository contains all assignments submitted for the **Advanced Programming** course. Each assignment is maintained in a separate Git branch as per the submission guidelines.
+### Requirements
 
-## Branches
+1. Create a `StringBuffer` struct containing:
 
-- `assignment-1`
-- `assignment-2`
-- `assignment-3`
-- `assignment-4`
-- `assignment-5`
-- `assignment-6`
-- `assignment-7`
-- `assignment-8`
-- `assignment-9`
-- `assignment-10`
-- `assignment-11`
-- `assignment-12`
-- `assignment-13`
-- `assignment-14`
-- `assignment-15`
-- `assignment-16`
-- `assignment-17`
-- `assignment-18`
-- `assignment-19`
+   * `char *data`
+   * `size_t length`
+   * `size_t capacity`
 
-## Submission Guidelines Followed
+2. Implement:
 
-- Each assignment is stored in a separate Git branch.
-- Each branch contains the corresponding source code.
-- Each branch includes a README file containing the assignment question.
+   * `sb_init(size_t initial_capacity)`
+   * `sb_append(StringBuffer *sb, const char *str)`
+   * `sb_free(StringBuffer *sb)`
 
----
+3. Use dynamic memory allocation with `malloc`.
 
-**Nitish Kumar**  
+4. Handle allocation failures safely.
+
+5. Use `realloc` to grow the buffer when required.
+
+6. Ensure safe use of `realloc` by storing the returned pointer in a temporary variable.
+
+7. Demonstrate the buffer growing at least twice.
+
+8. Free all allocated memory before program termination.
+
+## Program
+
+**File:** `string_buffer.c`
+
+The program implements a dynamic string buffer that automatically expands when additional space is required. Memory allocation, reallocation, and deallocation are handled safely to prevent buffer overflows and memory leaks.
+
+## Concepts Used
+
+* Structures
+* Dynamic Memory Allocation
+* malloc()
+* realloc()
+* free()
+* String Handling
+* Memory Leak Prevention
+
+## Compilation
+
+```bash
+gcc string_buffer.c -o output
+```
+
+## Execution
+
+```bash
+./output
+```
+
+## Expected Output
+
+* Initial buffer capacity
+* Buffer growth messages
+* Final concatenated string
+* Memory cleanup confirmation
+
+## Submitted By
+
+**Nitish Kumar**
+**Subject:** Advanced Programming
+**Teacher:** Nabajyoti Medhi
+**Semester:** 4th Semester
 **Tezpur University**
