@@ -1,44 +1,104 @@
-# Advanced Programming Assignments Repository
+# Assignment 12: E-Commerce Order Processing System using SOLID Principles
 
-**Name:** Nitish Kumar  
-**Subject:** Advanced Programming  
-**Teacher:** Nabojyoti Medhi  
-**Semester:** 4th Semester  
-**College:** Tezpur University  
+## Question
 
-## About
+Design a system in Java/Python for processing customer orders in an e-commerce platform.
 
-This repository contains all assignments submitted for the **Advanced Programming** course. Each assignment is maintained in a separate Git branch as per the submission guidelines.
+The system should support:
 
-## Branches
+* Multiple payment methods (Credit Card, UPI, Wallet)
+* Multiple notification channels (Email, SMS, Push)
+* Different order types (Regular Order, Discounted Order, Priority Order)
+* Multiple storage mechanisms (Database, File Storage)
 
-- `assignment-1`
-- `assignment-2`
-- `assignment-3`
-- `assignment-4`
-- `assignment-5`
-- `assignment-6`
-- `assignment-7`
-- `assignment-8`
-- `assignment-9`
-- `assignment-10`
-- `assignment-11`
-- `assignment-12`
-- `assignment-13`
-- `assignment-14`
-- `assignment-15`
-- `assignment-16`
-- `assignment-17`
-- `assignment-18`
-- `assignment-19`
+## SOLID Principles Implemented
 
-## Submission Guidelines Followed
+### Single Responsibility Principle (SRP)
 
-- Each assignment is stored in a separate Git branch.
-- Each branch contains the corresponding source code.
-- Each branch includes a README file containing the assignment question.
+Each class has a single responsibility:
 
----
+* Order classes handle order logic
+* Payment classes handle payment processing
+* Notification classes handle notifications
+* Storage classes handle persistence
 
-**Nitish Kumar**  
+### Open/Closed Principle (OCP)
+
+The system can be extended by adding:
+
+* New payment methods
+* New notification channels
+* New storage mechanisms
+
+without modifying existing code.
+
+### Liskov Substitution Principle (LSP)
+
+All subclasses can be used through their base abstract classes:
+
+* Payment
+* Notification
+* Storage
+* Order
+
+without affecting correctness.
+
+### Interface Segregation Principle (ISP)
+
+Small and focused interfaces are used:
+
+* Payment
+* Notification
+* Storage
+
+Classes implement only the behavior they require.
+
+### Dependency Inversion Principle (DIP)
+
+OrderService depends on abstractions instead of concrete implementations.
+
+Dependencies are injected through the constructor.
+
+## Program
+
+**File:** `ecommerce_order_system.py`
+
+The program:
+
+1. Creates an order
+2. Processes payment
+3. Sends notification
+4. Stores order details
+
+using dependency injection and abstraction.
+
+## Concepts Used
+
+* Abstract Base Classes (ABC)
+* Inheritance
+* Method Overriding
+* Dependency Injection
+* SOLID Principles
+* Polymorphism
+
+## Execution
+
+```bash
+python3 ecommerce_order_system.py
+```
+
+## Expected Output
+
+* Payment success message
+* Notification message
+* Order storage confirmation
+
+for multiple order types and payment methods.
+
+## Submitted By
+
+**Nitish Kumar**
+**Subject:** Advanced Programming
+**Teacher:** Nabajyoti Medhi
+**Semester:** 4th Semester
 **Tezpur University**
