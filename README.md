@@ -1,44 +1,80 @@
-# Advanced Programming Assignments Repository
+# Assignment 11: Library System using Abstraction and Polymorphism
 
-**Name:** Nitish Kumar  
-**Subject:** Advanced Programming  
-**Teacher:** Nabojyoti Medhi  
-**Semester:** 4th Semester  
-**College:** Tezpur University  
+## Question
 
-## About
+Design a library system in Java or Python with:
 
-This repository contains all assignments submitted for the **Advanced Programming** course. Each assignment is maintained in a separate Git branch as per the submission guidelines.
+### Base/Abstract Class
 
-## Branches
+LibraryItem
 
-- `assignment-1`
-- `assignment-2`
-- `assignment-3`
-- `assignment-4`
-- `assignment-5`
-- `assignment-6`
-- `assignment-7`
-- `assignment-8`
-- `assignment-9`
-- `assignment-10`
-- `assignment-11`
-- `assignment-12`
-- `assignment-13`
-- `assignment-14`
-- `assignment-15`
-- `assignment-16`
-- `assignment-17`
-- `assignment-18`
-- `assignment-19`
+Common fields:
 
-## Submission Guidelines Followed
+* title
+* year
 
-- Each assignment is stored in a separate Git branch.
-- Each branch contains the corresponding source code.
-- Each branch includes a README file containing the assignment question.
+Common method:
 
----
+* displayInfo()
 
-**Nitish Kumar**  
+### Subclasses
+
+#### Book
+
+* author
+
+#### DVD
+
+* duration
+* genre
+
+### Requirements
+
+* Use abstraction through a base/abstract class
+* Override methods in subclasses
+* Demonstrate polymorphism using a collection of LibraryItem objects
+* Include one additional feature:
+
+  * Default arguments OR constructor overloading
+  * Class/static counter
+
+## Program
+
+**File:** `library_system.py`
+
+The program demonstrates:
+
+* Abstraction using Abstract Base Classes (ABC)
+* Method overriding in Book and DVD classes
+* Polymorphism through a collection of LibraryItem objects
+* Static/Class counter for tracking total library items
+* Default arguments in constructors
+
+## Concepts Used
+
+* Abstract Classes
+* Inheritance
+* Method Overriding
+* Polymorphism
+* Static/Class Variables
+* Default Arguments
+
+## Execution
+
+```bash
+python3 library_system.py
+```
+
+## Expected Output
+
+* Details of Book objects
+* Details of DVD objects
+* Total number of library items
+
+## Submitted By
+
+**Nitish Kumar**
+**Subject:** Advanced Programming
+**Teacher:** Nabajyoti Medhi
+**Semester:** 4th Semester
 **Tezpur University**
