@@ -1,44 +1,47 @@
-# Advanced Programming Assignments Repository
+# Assignment 5: Todo List using React useState
 
-**Name:** Nitish Kumar  
-**Subject:** Advanced Programming  
-**Teacher:** Nabojyoti Medhi  
-**Semester:** 4th Semester  
-**College:** Tezpur University  
+## Question
 
-## About
+Create a simple React component that maintains a list of todos using useState. Allow the user to add a todo and display all added todos on the screen.
 
-This repository contains all assignments submitted for the **Advanced Programming** course. Each assignment is maintained in a separate Git branch as per the submission guidelines.
+## Program
 
-## Branches
+File: `TodoApp.jsx`
 
-- `assignment-1`
-- `assignment-2`
-- `assignment-3`
-- `assignment-4`
-- `assignment-5`
-- `assignment-6`
-- `assignment-7`
-- `assignment-8`
-- `assignment-9`
-- `assignment-10`
-- `assignment-11`
-- `assignment-12`
-- `assignment-13`
-- `assignment-14`
-- `assignment-15`
-- `assignment-16`
-- `assignment-17`
-- `assignment-18`
-- `assignment-19`
+The program uses React's `useState` hook to manage a list of todos. Users can enter a todo item, add it to the list, and view all added todos on the screen.
 
-## Submission Guidelines Followed
+## Features
 
-- Each assignment is stored in a separate Git branch.
-- Each branch contains the corresponding source code.
-- Each branch includes a README file containing the assignment question.
+* Uses React Functional Component.
+* Uses `useState` Hook.
+* Add new todo items.
+* Display all added todos.
+* Clear input field after adding a todo.
 
----
+## Running the Application
 
-**Nitish Kumar**  
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+## Sample Output
+
+* User enters a todo item.
+* Clicks **Add** button.
+* Todo item appears in the list below.
+
+## Submitted By
+
+**Nitish Kumar**
+**Subject:** Advanced Programming
+**Teacher:** Nabajyoti Medhi
+**Semester:** 4th Semester
 **Tezpur University**
