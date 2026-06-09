@@ -1,44 +1,52 @@
-# Advanced Programming Assignments Repository
+# Assignment 3: Book Search using ArrayList
 
-**Name:** Nitish Kumar  
-**Subject:** Advanced Programming  
-**Teacher:** Nabojyoti Medhi  
-**Semester:** 4th Semester  
-**College:** Tezpur University  
+## Question
 
-## About
+Write a Java program using ArrayList to store book titles. Add at least 5 books and search for books whose title contains a given word.
 
-This repository contains all assignments submitted for the **Advanced Programming** course. Each assignment is maintained in a separate Git branch as per the submission guidelines.
+## Program
 
-## Branches
+File: `BookSearch.java`
 
-- `assignment-1`
-- `assignment-2`
-- `assignment-3`
-- `assignment-4`
-- `assignment-5`
-- `assignment-6`
-- `assignment-7`
-- `assignment-8`
-- `assignment-9`
-- `assignment-10`
-- `assignment-11`
-- `assignment-12`
-- `assignment-13`
-- `assignment-14`
-- `assignment-15`
-- `assignment-16`
-- `assignment-17`
-- `assignment-18`
-- `assignment-19`
+The program uses an `ArrayList` to store book titles. A search word is entered by the user, and all book titles containing that word are displayed.
 
-## Submission Guidelines Followed
+## Features
 
-- Each assignment is stored in a separate Git branch.
-- Each branch contains the corresponding source code.
-- Each branch includes a README file containing the assignment question.
+* Uses Java ArrayList to store book titles.
+* Stores at least 5 books.
+* Accepts a search keyword from the user.
+* Performs case-insensitive searching.
+* Displays all matching book titles.
 
----
+## Compilation
 
-**Nitish Kumar**  
+```bash
+javac BookSearch.java
+```
+
+## Execution
+
+```bash
+java BookSearch
+```
+
+## Sample Input
+
+```text
+Java
+```
+
+## Sample Output
+
+```text
+Books containing "Java":
+Introduction to Java
+```
+
+## Submitted By
+
+**Nitish Kumar**
+**Subject:** Advanced Programming
+**Teacher:** Nabajyoti Medhi
+**Semester:** 4th Semester
 **Tezpur University**
