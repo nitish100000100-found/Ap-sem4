@@ -1,44 +1,107 @@
-# Advanced Programming Assignments Repository
+# Assignment 8: Course Enrollment Dashboard
 
-**Name:** Nitish Kumar  
-**Subject:** Advanced Programming  
-**Teacher:** Nabojyoti Medhi  
-**Semester:** 4th Semester  
-**College:** Tezpur University  
+## Question
 
-## About
+Develop a course enrollment dashboard in ReactJS.
 
-This repository contains all assignments submitted for the **Advanced Programming** course. Each assignment is maintained in a separate Git branch as per the submission guidelines.
+Each student:
 
-## Branches
+```javascript
+{
+  id: number,
+  name: string,
+  enrolledCourses: Set<string>,
+  gpa: number
+}
+```
 
-- `assignment-1`
-- `assignment-2`
-- `assignment-3`
-- `assignment-4`
-- `assignment-5`
-- `assignment-6`
-- `assignment-7`
-- `assignment-8`
-- `assignment-9`
-- `assignment-10`
-- `assignment-11`
-- `assignment-12`
-- `assignment-13`
-- `assignment-14`
-- `assignment-15`
-- `assignment-16`
-- `assignment-17`
-- `assignment-18`
-- `assignment-19`
+### Requirements
 
-## Submission Guidelines Followed
+1. Maintain students in state.
 
-- Each assignment is stored in a separate Git branch.
-- Each branch contains the corresponding source code.
-- Each branch includes a README file containing the assignment question.
+2. Implement:
 
----
+   * Add new student
+   * Remove student by ID
+   * Display students sorted by GPA (descending)
+   * Display all unique courses across students
+   * Filter students enrolled in a specific course
 
-**Nitish Kumar**  
+3. Use:
+
+   * useState
+   * Map internally for ID to Student mapping
+   * Set for course uniqueness
+   * map, filter and reduce
+   * Spread operator for updates
+   * Convert Set to Array before rendering
+   * Do not mutate state directly
+
+4. Compute time complexity of filtering students by course.
+
+## Program
+
+**File:** `App.jsx`
+
+The application maintains student enrollment data using React state and JavaScript collections.
+
+### Features
+
+* Add new student records
+* Remove students by ID
+* Sort students by GPA (highest first)
+* Display all unique courses
+* Filter students by selected course
+* Complexity visualization panel
+* Uses Map and Set internally
+* Immutable state updates
+
+## Complexity Analysis
+
+### Filtering Students by Course
+
+Filtering is performed using:
+
+```javascript
+students.filter(student =>
+  student.enrolledCourses.has(course)
+)
+```
+
+For n students:
+
+```text
+Time Complexity: O(n)
+```
+
+Each student is checked once and Set lookup is O(1) on average.
+
+### Space Complexity
+
+```text
+O(n)
+```
+
+for storing filtered results.
+
+## Running the Application
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start development server:
+
+```bash
+npm run dev
+```
+
+## Submitted By
+
+**Nitish Kumar**
+**Subject:** Advanced Programming
+**Teacher:** Nabajyoti Medhi
+**Semester:** 4th Semester
 **Tezpur University**
