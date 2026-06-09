@@ -1,44 +1,85 @@
-# Advanced Programming Assignments Repository
+# Assignment 17: User Onboarding Validation Module
 
-**Name:** Nitish Kumar  
-**Subject:** Advanced Programming  
-**Teacher:** Nabojyoti Medhi  
-**Semester:** 4th Semester  
-**College:** Tezpur University  
+## Question
 
-## About
+Build a user onboarding validation module for a platform.
 
-This repository contains all assignments submitted for the **Advanced Programming** course. Each assignment is maintained in a separate Git branch as per the submission guidelines.
+The system must validate:
 
-## Branches
+* Email address
+* User age
 
-- `assignment-1`
-- `assignment-2`
-- `assignment-3`
-- `assignment-4`
-- `assignment-5`
-- `assignment-6`
-- `assignment-7`
-- `assignment-8`
-- `assignment-9`
-- `assignment-10`
-- `assignment-11`
-- `assignment-12`
-- `assignment-13`
-- `assignment-14`
-- `assignment-15`
-- `assignment-16`
-- `assignment-17`
-- `assignment-18`
-- `assignment-19`
+### Requirements
 
-## Submission Guidelines Followed
+#### Email Validation
 
-- Each assignment is stored in a separate Git branch.
-- Each branch contains the corresponding source code.
-- Each branch includes a README file containing the assignment question.
+* Email must not be null
+* Email must not be empty
+* Email must match a valid email pattern
 
----
+#### Age Validation
 
-**Nitish Kumar**  
+* User must be at least 18 years old
+
+### Python Requirements
+
+* Implement custom exception:
+
+  * InvalidEmailError
+  * UnderageError
+* Create RegistrationService class
+* Implement:
+
+```python
+def register_user(self, email: str, age: int) -> bool
+```
+
+* Use assert for internal invariant checking
+* Write pytest test cases
+* Use pytest.fixture
+* Use pytest.raises for exception testing
+
+## Program
+
+**File:** `registration_service.py`
+
+The program validates user registration requests by checking email format and age requirements. Custom exceptions are raised when validation fails, and pytest is used for automated testing.
+
+## Concepts Used
+
+* Custom Exceptions
+* Regular Expressions
+* Assertions
+* Pytest Fixtures
+* Unit Testing
+* Exception Handling
+
+## Execution
+
+Run program:
+
+```bash
+python3 registration_service.py
+```
+
+Run tests:
+
+```bash
+pytest registration_service.py
+```
+
+## Test Cases Covered
+
+* Successful registration
+* Invalid email format
+* Empty email
+* Underage user
+* None email assertion
+
+## Submitted By
+
+**Nitish Kumar**
+**Subject:** Advanced Programming
+**Teacher:** Nabajyoti Medhi
+**Semester:** 4th Semester
 **Tezpur University**
