@@ -1,44 +1,78 @@
-# Advanced Programming Assignments Repository
+# Assignment 10: Student System using Composition and Inheritance
 
-**Name:** Nitish Kumar  
-**Subject:** Advanced Programming  
-**Teacher:** Nabojyoti Medhi  
-**Semester:** 4th Semester  
-**College:** Tezpur University  
+## Question
 
-## About
+Design a student system in Python with:
 
-This repository contains all assignments submitted for the **Advanced Programming** course. Each assignment is maintained in a separate Git branch as per the submission guidelines.
+### Address Class
 
-## Branches
+* street
+* city
+* zipCode
 
-- `assignment-1`
-- `assignment-2`
-- `assignment-3`
-- `assignment-4`
-- `assignment-5`
-- `assignment-6`
-- `assignment-7`
-- `assignment-8`
-- `assignment-9`
-- `assignment-10`
-- `assignment-11`
-- `assignment-12`
-- `assignment-13`
-- `assignment-14`
-- `assignment-15`
-- `assignment-16`
-- `assignment-17`
-- `assignment-18`
-- `assignment-19`
+### Student Class
 
-## Submission Guidelines Followed
+* name
+* age
+* Address
+* course list
 
-- Each assignment is stored in a separate Git branch.
-- Each branch contains the corresponding source code.
-- Each branch includes a README file containing the assignment question.
+Requirements:
 
----
+* Store age as a protected attribute
+* Control age using @property
+* Implement:
 
-**Nitish Kumar**  
+  * add_course()
+  * display()
+
+### ScholarshipStudent Class
+
+* Add scholarshipAmount
+* Override display()
+
+### Concepts Demonstrated
+
+* Composition (Student HAS-A Address)
+* Data validation using @property
+* Inheritance
+* Method overriding using super()
+* Mutable behavior of course lists
+
+## Program
+
+**File:** `student_system.py`
+
+The program demonstrates:
+
+* Composition using Address inside Student
+* Validation using property decorators
+* Course management using mutable lists
+* Inheritance through ScholarshipStudent
+* Method overriding with super()
+* Exception handling for invalid age and scholarship values
+
+## Compilation
+
+Python is an interpreted language; no compilation is required.
+
+## Execution
+
+```bash
+python3 student_system.py
+```
+
+## Expected Output
+
+* Student details
+* Scholarship student details
+* Course list updates
+* Validation error for invalid age
+
+## Submitted By
+
+**Nitish Kumar**
+**Subject:** Advanced Programming
+**Teacher:** Nabajyoti Medhi
+**Semester:** 4th Semester
 **Tezpur University**
