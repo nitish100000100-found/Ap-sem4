@@ -1,44 +1,77 @@
-# Advanced Programming Assignments Repository
+# Assignment 7: Activity Log Analyzer
 
-**Name:** Nitish Kumar  
-**Subject:** Advanced Programming  
-**Teacher:** Nabojyoti Medhi  
-**Semester:** 4th Semester  
-**College:** Tezpur University  
+## Question
 
-## About
+Develop an activity log analyzer in Python.
 
-This repository contains all assignments submitted for the **Advanced Programming** course. Each assignment is maintained in a separate Git branch as per the submission guidelines.
+You are given a list of activity records:
 
-## Branches
+```python
+{
+    "user": str,
+    "action": str,
+    "duration": float
+}
+```
 
-- `assignment-1`
-- `assignment-2`
-- `assignment-3`
-- `assignment-4`
-- `assignment-5`
-- `assignment-6`
-- `assignment-7`
-- `assignment-8`
-- `assignment-9`
-- `assignment-10`
-- `assignment-11`
-- `assignment-12`
-- `assignment-13`
-- `assignment-14`
-- `assignment-15`
-- `assignment-16`
-- `assignment-17`
-- `assignment-18`
-- `assignment-19`
+Implement:
 
-## Submission Guidelines Followed
+```python
+total_time_per_user(logs)
+most_active_users(logs, k)
+unique_actions(logs)
+```
 
-- Each assignment is stored in a separate Git branch.
-- Each branch contains the corresponding source code.
-- Each branch includes a README file containing the assignment question.
+Requirements:
 
----
+* Use dict, set and list
+* Use comprehensions where appropriate
+* Use sorted() with key
+* Avoid explicit loops where possible
+* Use typing annotations
+* Use defaultdict optionally
+* Use reduce() to compute total activity time
 
-**Nitish Kumar**  
+Perform complexity analysis:
+
+1. Time complexity for computing Top-K users
+2. Space complexity of storing intermediate results
+
+## Program
+
+**File:** `activity_log_analyzer.py`
+
+The program analyzes student activity logs and computes:
+
+* Total activity time per user
+* Top-K most active users
+* Unique actions performed
+* Empirical time complexity analysis
+* Empirical space complexity analysis
+* Log-log regression based Big-O estimation
+
+## Concepts Used
+
+* Python Lists
+* Dictionaries
+* Sets
+* defaultdict
+* reduce()
+* heapq
+* Type Hints
+* Comprehensions
+* Complexity Benchmarking
+
+## Execution
+
+```bash
+python3 activity_log_analyzer.py
+```
+
+## Submitted By
+
+**Nitish Kumar**
+**Subject:** Advanced Programming
+**Teacher:** Nabajyoti Medhi
+**Semester:** 4th Semester
 **Tezpur University**
