@@ -1,44 +1,116 @@
-# Advanced Programming Assignments Repository
+# Assignment 19: Simple Digital Counter & Theme Toggle App
 
-**Name:** Nitish Kumar  
-**Subject:** Advanced Programming  
-**Teacher:** Nabojyoti Medhi  
-**Semester:** 4th Semester  
-**College:** Tezpur University  
+## Question
 
-## About
+Build a single-screen mobile application using React Native.
 
-This repository contains all assignments submitted for the **Advanced Programming** course. Each assignment is maintained in a separate Git branch as per the submission guidelines.
+The application should:
 
-## Branches
+* Display a digital counter.
+* Allow increment, decrement, and reset operations.
+* Prevent negative counter values.
+* Support Light Mode and Dark Mode.
+* Dynamically update UI colors when the theme changes.
 
-- `assignment-1`
-- `assignment-2`
-- `assignment-3`
-- `assignment-4`
-- `assignment-5`
-- `assignment-6`
-- `assignment-7`
-- `assignment-8`
-- `assignment-9`
-- `assignment-10`
-- `assignment-11`
-- `assignment-12`
-- `assignment-13`
-- `assignment-14`
-- `assignment-15`
-- `assignment-16`
-- `assignment-17`
-- `assignment-18`
-- `assignment-19`
+## Program
 
-## Submission Guidelines Followed
+**File:** `App.jsx`
 
-- Each assignment is stored in a separate Git branch.
-- Each branch contains the corresponding source code.
-- Each branch includes a README file containing the assignment question.
+The application uses React Native components and React Hooks to implement a digital counter with theme switching functionality.
 
----
+## Features
 
-**Nitish Kumar**  
+### Counter Operations
+
+* Increment counter by 1
+* Decrement counter by 1
+* Prevent negative values
+* Reset counter to 0
+
+### Theme Toggle
+
+#### Light Mode (Default)
+
+* White background
+* Black text
+
+#### Dark Mode
+
+* Dark background
+* White text
+
+### State Management
+
+The application uses React's `useState` hook to manage:
+
+* Counter value
+* Theme mode
+
+### Components Used
+
+* View
+* Text
+* TouchableOpacity
+* StatusBar
+
+### Layout
+
+The application uses Flexbox for:
+
+* Centering content
+* Arranging buttons side-by-side
+* Responsive alignment
+
+## Validation
+
+The decrement button contains a safety check:
+
+```javascript
+if (count > 0) {
+  setCount(count - 1);
+}
+```
+
+This prevents the counter value from becoming negative.
+
+## Running the Application
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start Metro Bundler:
+
+```bash
+npx react-native start
+```
+
+Run on Android:
+
+```bash
+npx react-native run-android
+```
+
+Run on iOS:
+
+```bash
+npx react-native run-ios
+```
+
+## Folder Structure
+
+```text
+assignment-19
+├── README.md
+└── App.jsx
+```
+
+## Submitted By
+
+**Nitish Kumar**
+**Subject:** Advanced Programming
+**Teacher:** Nabajyoti Medhi
+**Semester:** 4th Semester
 **Tezpur University**
