@@ -1,44 +1,96 @@
-# Advanced Programming Assignments Repository
+# Assignment 9: Banking System using Inheritance and Polymorphism
 
-**Name:** Nitish Kumar  
-**Subject:** Advanced Programming  
-**Teacher:** Nabojyoti Medhi  
-**Semester:** 4th Semester  
-**College:** Tezpur University  
+## Question
 
-## About
+Design a banking system in Java with:
 
-This repository contains all assignments submitted for the **Advanced Programming** course. Each assignment is maintained in a separate Git branch as per the submission guidelines.
+### Base Class: Account
 
-## Branches
+* Private fields:
 
-- `assignment-1`
-- `assignment-2`
-- `assignment-3`
-- `assignment-4`
-- `assignment-5`
-- `assignment-6`
-- `assignment-7`
-- `assignment-8`
-- `assignment-9`
-- `assignment-10`
-- `assignment-11`
-- `assignment-12`
-- `assignment-13`
-- `assignment-14`
-- `assignment-15`
-- `assignment-16`
-- `assignment-17`
-- `assignment-18`
-- `assignment-19`
+  * accountNumber
+  * ownerName
+  * balance
+* Provide getters and setters
+* Implement constructor overloading and constructor chaining
+* Implement:
 
-## Submission Guidelines Followed
+  * deposit()
+  * withdraw()
+  * display()
 
-- Each assignment is stored in a separate Git branch.
-- Each branch contains the corresponding source code.
-- Each branch includes a README file containing the assignment question.
+### Derived Classes
 
----
+#### SavingsAccount
 
-**Nitish Kumar**  
+* Add interestRate
+* Override display()
+* Show calculated interest
+
+#### CurrentAccount
+
+* Add overdraftLimit
+* Restrict withdrawals accordingly
+* Override display()
+
+### Requirements
+
+* Proper encapsulation
+* Constructor overloading and chaining using `this(...)`
+* Inheritance and method overriding using `@Override`
+* Use of `super`
+* Polymorphism using `Account` references
+* Validation using exceptions
+
+## Program
+
+**File:** `BankSystem.java`
+
+The program demonstrates:
+
+* Encapsulation using private fields and getters/setters
+* Constructor chaining
+* Inheritance
+* Method overriding
+* Polymorphism
+* Exception handling and validation
+
+## Concepts Used
+
+* Classes and Objects
+* Encapsulation
+* Constructor Overloading
+* Constructor Chaining
+* Inheritance
+* Method Overriding
+* Polymorphism
+* Exception Handling
+* ArrayList
+
+## Compilation
+
+```bash
+javac BankSystem.java
+```
+
+## Execution
+
+```bash
+java BankSystem
+```
+
+## Expected Output
+
+* Details of Savings Account
+* Details of Current Account
+* Interest calculation for Savings Account
+* Overdraft handling for Current Account
+* Error message for invalid withdrawal
+
+## Submitted By
+
+**Nitish Kumar**
+**Subject:** Advanced Programming
+**Teacher:** Nabajyoti Medhi
+**Semester:** 4th Semester
 **Tezpur University**
